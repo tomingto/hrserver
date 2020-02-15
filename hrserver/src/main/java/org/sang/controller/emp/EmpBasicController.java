@@ -94,6 +94,19 @@ public class EmpBasicController {
         return RespBean.error("删除失败!");
     }
 
+    /**
+     * 查看员工资料
+     * @param page
+     * @param size
+     * @param keywords
+     * @param politicId
+     * @param nationId
+     * @param posId
+     * @param jobLevelId
+     * @param engageForm
+     * @param departmentId
+     * @param beginDateScope
+     */
     @RequestMapping(value = "/emp", method = RequestMethod.GET)
     public Map<String, Object> getEmployeeByPage(
             @RequestParam(defaultValue = "1") Integer page,
